@@ -166,8 +166,7 @@ a {
 
 .list--tick .list__item {
     padding-left: 0.5rem;
-    margin-bottom: 1rem; 
-       
+    margin-bottom: 1rem;           
 }
 
 
@@ -175,7 +174,9 @@ a {
 @media screen and (min-width: 1024px) {
     .list--tick .list__item {
         padding-left: 0;
-    }    
+    }   
+    
+    
 }
 
 /* Icons */
@@ -255,6 +256,7 @@ a {
 .btn--outline:hover {
     background: var(--color-headings);
     color: #fff;
+    transition: 0.2s;  
 
 }
 
@@ -375,6 +377,30 @@ a {
     letter-spacing: 1px;
 }
 
+.plan .list__item {
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.plan .btn {
+    margin-top: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+    .plan__price {
+        font-size: 5rem;
+    }
+    .plan__billing-cycle {
+        font-size: 1.6rem;
+    }
+    .plan__desc {
+        font-size: 1.7rem;
+    }
+}
 
 
 
