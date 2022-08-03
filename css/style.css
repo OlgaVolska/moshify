@@ -151,6 +151,7 @@ a {
     list-style: none;
     padding-left: 0;
     color: var(--color-headings);
+   
 }
 
 .list--inline .list__item {
@@ -165,8 +166,11 @@ a {
 
 .list--tick .list__item {
     padding-left: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
+       
 }
+
+
 
 @media screen and (min-width: 1024px) {
     .list--tick .list__item {
@@ -364,12 +368,13 @@ a {
     margin-right: 1.5rem;
 }
 
-
-
 .plan__desc {
     display: block;
     font-size: 2rem;
     font-family: 300;
     letter-spacing: 1px;
 }
+
+
+
 
