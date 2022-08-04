@@ -12,10 +12,36 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="grid grid--1x2 grid--1x3">
-        <div style="height: 100px; background: violet;"></div>      
-        <div style="height: 100px; background: chocolate;"></div> 
-    </div>      
+<body style="padding: 2rem;">
+    <div class="card testimonial">
+        <div class="grid grid--1x2">
+            <div class="testimonial__image">
+                <img src="images/testimonial.jpg" alt="The smile developer">
+                <span class="icon-container icon-container--accent">
+                    <svg class="icon icon--white icon--small">
+                        <use xlink:href="images/sprite.svg#quotes"></use>
+                    </svg>
+                </span>
+            </div>
+            <blockquote class="quote">
+                <p class="quote__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, explicabo. Ex vitae minus, fugit magni dolores voluptas ullam delectus, ad eos qui id. Enim, at obcaecati quas dicta amet accusamus nesciunt totam minus itaque nisi, laboriosam sit consequatur repudiandae voluptas?
+                </p>
+                <footer>
+                    <div class="media">
+                        <div class="media__image">           
+                            <svg class="icon icon--primary quote__icon">
+                                <use xlink:href="images/sprite.svg#line"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body"> 
+                            <h3 class="media__title quote__author"> Johne Lumeo</h3>
+                            <p class="quote__company">Mosh Company ceo</p>
+                        </div>
+                    </div>
+                </footer>
+            </blockquote>            
+        </div>
+    </div>         
 </body>
 </html>

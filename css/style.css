@@ -187,6 +187,10 @@ a {
     height: 40px;
 }
 
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
 .icon-container {
     align-items: center;
     background-color: #f3f9fa;
@@ -195,6 +199,10 @@ a {
     height: 64px;
     justify-content: center;
     width: 64px;
+}
+
+.icon-container--accent {
+    background-color: var(--color-accent);
 }
 
 .icon--primary {
@@ -300,10 +308,6 @@ a {
     margin: 3px;
 }
 
-.icon--white {
-    margin-right: 2rem;
-}
-
 .input {
     padding: 1.5rem 3.5rem;   
     border-radius: var(--border-radius);
@@ -329,7 +333,7 @@ a {
 
 .card {
     border-radius: 8px;
-    box-shadow: 0 0 20px 10px #f3f3f3;    
+    box-shadow: 0 0 30px 20px #ebebeb;    
     overflow: hidden;
 }
 
@@ -347,6 +351,7 @@ a {
     background: var(--color-secondary);
     color: #fff;
 }
+
 
 
 /* Plans */
@@ -508,3 +513,37 @@ a {
     }
 
 }
+
+/* Testimonials */
+
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+.testimonial__image > .icon-container {
+    position: absolute;
+    top: 2rem;
+    right: -32px;
+}
+
+.testimonial__image > img {
+    width: 100%;
+}
+
+@media screen and (min-width: 786px) {
+    .testimonial .quote,
+    .testimonial .quote__author {
+        font-size: 2.4rem;
+    }
+    .testimonial .quote__company {
+        font-size: 1.8rem;
+    }
+    .quote {
+        margin-left: 6rem;
+    }
+    
+}
+
