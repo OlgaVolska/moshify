@@ -33,6 +33,11 @@ body {
 
 /*  Typography */
 
+::selection {
+    background: var(--color-primary);
+    color: rgb(231, 231, 231);
+}
+
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
@@ -66,6 +71,7 @@ p {
 
     h3 {
         font-size: 2.4rem;
+        font-weight: 500;
     }
 }
 
@@ -157,7 +163,7 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
+
    
 }
 
@@ -173,7 +179,8 @@ a {
 
 .list--tick .list__item {
     padding-left: 0.5rem;
-    margin-bottom: 1rem;           
+    margin-bottom: 1rem;   
+    color: var(--color-headings);        
 }
 
 
@@ -462,6 +469,7 @@ a {
 
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__body {
@@ -551,7 +559,7 @@ a {
 /* Testimonials */
 
 .testimonial {
-    padding: 3rem;
+    padding: 3.2rem;
 }
 
 .testimonial__image {
@@ -643,6 +651,7 @@ a {
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 
@@ -849,4 +858,43 @@ a {
 
 } */
 
+/* Block-showcase */
+
+
+.showcase .grid {
+    gap: 3rem;
+}
+
+.showcase__picture > img {
+    width: 100%;
+}
+
+.showcase .media__title {
+    color: #fff;
+    
+}
+
+.showcase__list {
+    margin-right: 3rem;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .showcase .grid {
+        grid-template-columns: 50% 50%;
+    }
+    .showcase__picture {        
+        justify-self: end;      
+    }
+    .showcase__picture > img {
+        width: auto; 
+        max-width: 700px;
+    }
+    .showcase .media__body,
+    .showcase .media__title {
+        font-size: 1.8rem;
+    }
+}
 
