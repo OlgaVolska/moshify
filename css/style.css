@@ -60,6 +60,8 @@ p {
     margin-top: 0;
 }
 
+
+
 @media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
@@ -487,7 +489,6 @@ a {
 /* Quote */
 
 .quote {
-    font-size: 3rem;
     font-style: italic;
     color: var(--color-body-darker);
     line-height: 1.3;
@@ -550,11 +551,15 @@ a {
 
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
-        grid-template-columns: repeat(3, 1fr);
-       
+        grid-template-columns: repeat(3, 1fr);       
+    }
+    .grid--1x5 {
+        grid-template-columns: repeat(5, 1fr);
     }
 
 }
+
+
 
 /* Testimonials */
 
@@ -898,3 +903,70 @@ a {
     }
 }
 
+/* Footer block */
+
+.footer {
+    background: #232222;
+}
+
+.footer a {
+    color: #777;
+    
+}
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+    margin: 0;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer__brand {   
+    margin-top: 5rem;
+    text-align: center;    
+}
+
+.footer__brand img {
+    width: 100%;
+    max-width: 230px;
+}
+
+.footer__copyright {
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__grid {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+    .footer__brand {
+        order: -1;
+        margin-top: 1rem;
+    }
+    .footer .collapsible__chevron {
+        display: none;
+    }
+    .footer .collapsible__content {
+        opacity: 1;
+        max-height: 100%;
+    }
+    .footer__copyright,
+    .footer__heading ,
+    .footer a {
+        font-size: 1.5rem;
+    }
+    .footer__section {
+        border: 0;
+    }
+      
+}
+ 
